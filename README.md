@@ -221,7 +221,23 @@
 
     <!-- ZSDA -->
     <tr>
-      <td rows
+      <td rowspan="3">ZSDA</td>
+      <td>PODA</td><td>0.868</td><td>0.925</td><td>3.226</td><td>0.497</td><td><strong>0.327</strong></td><td>1.626</td>
+                   <td>0.732</td><td>0.848</td><td>1.436</td><td>0.269</td><td>0.227</td><td>2.301</td>
+    </tr>
+
+    <tr>
+      <td>ULDA</td><td>0.876</td><td>0.915</td><td>2.849</td><td>0.447</td><td>0.282</td><td>1.810</td>
+                   <td>0.753</td><td>0.831</td><td>1.391</td><td>0.266</td><td>0.218</td><td>2.476</td>
+    </tr>
+
+    <tr>
+      <td><strong>Ours</strong></td><td><strong>0.877</strong></td><td><strong>0.929</strong></td><td><strong>3.293</strong></td><td><strong>0.506</strong></td><td>0.326</td><td><strong>1.598</strong></td>
+                   <td>0.756</td><td>0.857</td><td><strong>1.608</strong></td><td><strong>0.298</strong></td><td><strong>0.241</strong></td><td>2.188</td>
+    </tr>
+
+  </tbody>
+</table>
 
 
 
@@ -409,6 +425,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
