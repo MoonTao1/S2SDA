@@ -139,111 +139,13 @@
 <div align="center">
 <img src="fig\visual.png" width="800" height="auto" />
 </div>
->COMPARISON WITH OTHER METHODS FROM TraffiicGaze TO DRFIXD(RAINY)
 
-<h3 align="center">Generalization Performance from DADA<sub>sunny</sub> → DADA<sub>t</sub></h3>
-
-<!-- =================== 第一部分：RAINY + SNOWY =================== -->
-<table>
-  <thead>
-    <tr>
-      <th rowspan="2">Method</th>
-      <th rowspan="2">Model</th>
-      <th colspan="6">RAINY</th>
-      <th colspan="6">SNOWY</th>
-    </tr>
-    <tr>
-      <th>AUC_B&#8593;</th><th>AUC_J&#8593;</th><th>NSS&#8593;</th><th>CC&#8593;</th><th>SIM&#8593;</th><th>KLD&#8595;</th>
-      <th>AUC_B&#8593;</th><th>AUC_J&#8593;</th><th>NSS&#8593;</th><th>CC&#8593;</th><th>SIM&#8593;</th><th>KLD&#8595;</th>
-    </tr>
-  </thead>
-
-  <tbody>
-
-    <!-- Traditional -->
-    <tr>
-      <td rowspan="5">Traditional</td>
-      <td>CDNN</td><td>0.866</td><td>0.920</td><td>3.048</td><td>0.469</td><td>0.288</td><td>1.738</td>
-                     <td>0.743</td><td>0.852</td><td>1.396</td><td>0.265</td><td>0.216</td><td>2.249</td>
-    </tr>
-
-    <tr>
-      <td>CPFE</td><td>0.875</td><td>0.921</td><td>2.984</td><td>0.462</td><td>0.289</td><td>1.735</td>
-                   <td>0.735</td><td>0.841</td><td>1.328</td><td>0.255</td><td>0.212</td><td>2.329</td>
-    </tr>
-
-    <tr>
-      <td>Transal</td><td>0.841</td><td>0.905</td><td>2.555</td><td>0.408</td><td>0.266</td><td>1.929</td>
-                     <td><strong>0.813</strong></td><td>0.860</td><td>1.505</td><td>0.280</td><td>0.207</td><td>2.148</td>
-    </tr>
-
-    <tr>
-      <td>SCOUT</td><td>0.868</td><td>0.914</td><td>2.720</td><td>0.430</td><td>0.271</td><td>1.840</td>
-                   <td>0.734</td><td>0.840</td><td>1.296</td><td>0.248</td><td>0.209</td><td>2.373</td>
-    </tr>
-
-    <tr>
-      <td>STDENet</td><td>0.877</td><td>0.926</td><td>3.170</td><td>0.489</td><td>0.318</td><td>1.647</td>
-                     <td>0.751</td><td>0.854</td><td>1.469</td><td>0.276</td><td>0.226</td><td>2.265</td>
-    </tr>
-
-    <!-- UDA -->
-    <tr>
-      <td rowspan="6">UDA</td>
-      <td>MT</td><td>0.874</td><td>0.917</td><td>2.844</td><td>0.444</td><td>0.281</td><td>1.785</td>
-                 <td>0.782</td><td><strong>0.862</strong></td><td>1.583</td><td><strong>0.298</strong></td><td>0.228</td><td><strong>2.128</strong></td>
-    </tr>
-
-    <tr>
-      <td>DANN</td><td>0.858</td><td>0.912</td><td>2.720</td><td>0.425</td><td>0.264</td><td>1.862</td>
-                   <td>0.785</td><td>0.848</td><td>1.538</td><td>0.251</td><td>0.169</td><td>2.406</td>
-    </tr>
-
-    <tr>
-      <td>DRCN</td><td>0.815</td><td>0.893</td><td>2.556</td><td>0.396</td><td>0.240</td><td>2.021</td>
-                   <td>0.737</td><td>0.814</td><td>1.132</td><td>0.221</td><td>0.190</td><td>2.471</td>
-    </tr>
-
-    <tr>
-      <td>HD2S</td><td>0.843</td><td>0.867</td><td>1.809</td><td>0.290</td><td>0.177</td><td>2.537</td>
-                   <td>0.536</td><td>0.529</td><td>0.243</td><td>0.052</td><td>0.090</td><td>2.998</td>
-    </tr>
-
-    <tr>
-      <td>AT</td><td>0.871</td><td>0.915</td><td>2.762</td><td>0.434</td><td>0.273</td><td>1.830</td>
-                 <td>0.740</td><td>0.848</td><td>1.406</td><td>0.265</td><td>0.223</td><td>2.295</td>
-    </tr>
-
-    <tr>
-      <td>MHDAN</td><td>0.850</td><td>0.900</td><td>2.430</td><td>0.388</td><td>0.234</td><td>2.029</td>
-                    <td>0.771</td><td>0.834</td><td>1.406</td><td>0.266</td><td>0.199</td><td>2.327</td>
-    </tr>
-
-    <!-- ZSDA -->
-    <tr>
-      <td rowspan="3">ZSDA</td>
-      <td>PODA</td><td>0.868</td><td>0.925</td><td>3.226</td><td>0.497</td><td><strong>0.327</strong></td><td>1.626</td>
-                   <td>0.732</td><td>0.848</td><td>1.436</td><td>0.269</td><td>0.227</td><td>2.301</td>
-    </tr>
-
-    <tr>
-      <td>ULDA</td><td>0.876</td><td>0.915</td><td>2.849</td><td>0.447</td><td>0.282</td><td>1.810</td>
-                   <td>0.753</td><td>0.831</td><td>1.391</td><td>0.266</td><td>0.218</td><td>2.476</td>
-    </tr>
-
-    <tr>
-      <td><strong>Ours</strong></td><td><strong>0.877</strong></td><td><strong>0.929</strong></td><td><strong>3.293</strong></td><td><strong>0.506</strong></td><td>0.326</td><td><strong>1.598</strong></td>
-                   <td>0.756</td><td>0.857</td><td><strong>1.608</strong></td><td><strong>0.298</strong></td><td><strong>0.241</strong></td><td>2.188</td>
-    </tr>
-
-  </tbody>
-</table>
 
 
 
 
 <div align="center">
-<img src="pic\vis_rainy_00.png" width="800" height="auto" />
+<img src="fig\vis_rainy.png" width="800" height="auto" />
 </div>
 
 
@@ -395,7 +297,19 @@
 
 >Qualitative evaluation comparison of proposed model and the other methods from sunny dataset TrafficGaze to night dataset DrFixD(night). 
 <div align="center">
-<img src="pic\night_00.png" width="1200" height="auto" />
+<img src="fig\vis_night.png" width="1200" height="auto" />
+</div>
+
+<div align="center">
+<img src="fig\vis_BDDA_night.png" width="1200" height="auto" />
+</div>
+
+<div align="center">
+<img src="fig\vis_DADA_night.png" width="1200" height="auto" />
+</div>
+
+<div align="center">
+<img src="fig\vis_DADA_snowy.png" width="1200" height="auto" />
 </div>
 
 
@@ -425,6 +339,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
