@@ -141,9 +141,7 @@
 </div>
 >COMPARISON WITH OTHER METHODS FROM TraffiicGaze TO DRFIXD(RAINY)
 
-<div align="center">
-
-<h3>Generalization Performance from DADA<sub>sunny</sub> → DADA<sub>t</sub></h3>
+<h3 align="center">Generalization Performance from DADA<sub>sunny</sub> → DADA<sub>t</sub></h3>
 
 <!-- =================== 第一部分：RAINY + SNOWY =================== -->
 <table>
@@ -151,19 +149,20 @@
     <tr>
       <th rowspan="2">Method</th>
       <th rowspan="2">Model</th>
-      <th colspan="6"><b>RAINY</b></th>
-      <th colspan="6"><b>SNOWY</b></th>
+      <th colspan="6">RAINY</th>
+      <th colspan="6">SNOWY</th>
     </tr>
     <tr>
-      <th>AUC_B↑</th> <th>AUC_J↑</th> <th>NSS↑</th> <th>CC↑</th> <th>SIM↑</th> <th>KLD↓</th>
-      <th>AUC_B↑</th> <th>AUC_J↑</th> <th>NSS↑</th> <th>CC↑</th> <th>SIM↑</th> <th>KLD↓</th>
+      <th>AUC_B&#8593;</th><th>AUC_J&#8593;</th><th>NSS&#8593;</th><th>CC&#8593;</th><th>SIM&#8593;</th><th>KLD&#8595;</th>
+      <th>AUC_B&#8593;</th><th>AUC_J&#8593;</th><th>NSS&#8593;</th><th>CC&#8593;</th><th>SIM&#8593;</th><th>KLD&#8595;</th>
     </tr>
   </thead>
 
   <tbody>
 
     <!-- Traditional -->
-    <tr><td rowspan="5">Traditional</td>
+    <tr>
+      <td rowspan="5">Traditional</td>
       <td>CDNN</td><td>0.866</td><td>0.920</td><td>3.048</td><td>0.469</td><td>0.288</td><td>1.738</td>
                      <td>0.743</td><td>0.852</td><td>1.396</td><td>0.265</td><td>0.216</td><td>2.249</td>
     </tr>
@@ -175,7 +174,7 @@
 
     <tr>
       <td>Transal</td><td>0.841</td><td>0.905</td><td>2.555</td><td>0.408</td><td>0.266</td><td>1.929</td>
-                     <td><b>0.813</b></td><td>0.860</td><td>1.505</td><td>0.280</td><td>0.207</td><td>2.148</td>
+                     <td><strong>0.813</strong></td><td>0.860</td><td>1.505</td><td>0.280</td><td>0.207</td><td>2.148</td>
     </tr>
 
     <tr>
@@ -189,9 +188,10 @@
     </tr>
 
     <!-- UDA -->
-    <tr><td rowspan="6">UDA</td>
+    <tr>
+      <td rowspan="6">UDA</td>
       <td>MT</td><td>0.874</td><td>0.917</td><td>2.844</td><td>0.444</td><td>0.281</td><td>1.785</td>
-                 <td>0.782</td><td><b>0.862</b></td><td>1.583</td><td><b>0.298</b></td><td>0.228</td><td><b>2.128</b></td>
+                 <td>0.782</td><td><strong>0.862</strong></td><td>1.583</td><td><strong>0.298</strong></td><td>0.228</td><td><strong>2.128</strong></td>
     </tr>
 
     <tr>
@@ -220,18 +220,9 @@
     </tr>
 
     <!-- ZSDA -->
-    <tr><td rowspan="3">ZSDA</td>
-      <td>PØDA</td><td>0.868</td><td>0.925</td><td>3.226</td><td>0.497</td><td><b>0.327</b></td><td>1.626</td>
-                   <td>0.732</td><td>0.848</td><td>1.436</td><td>0.269</td><td>0.227</td><td>2.301</td>
-    </tr>
-
     <tr>
-      <td>ULDA</td><td>0.876</td><td>0.915</td><td>2.849</td><td>0.447</td><td>0.282</td><td>1.810</td>
-                   <td>0.753</td><td>0.831</td><td>1.391</td><td>0.266</td><td>0.218</td><td>2.476</td>
-    </tr>
+      <td rows
 
-    <tr>
-      <td><b>Ours</b></td><td><b>0.877</b>
 
 
 
@@ -418,6 +409,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
