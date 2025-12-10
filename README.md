@@ -143,144 +143,96 @@
 
 <div align="center">
 
+<h3>Generalization Performance from DADA<sub>sunny</sub> → DADA<sub>t</sub></h3>
+
+<!-- =================== 第一部分：RAINY + SNOWY =================== -->
 <table>
   <thead>
     <tr>
-      <th>Model</th>
-      <th>AUC_B↑</th>
-      <th>AUC_J↑</th>
-      <th>NSS↑</th>
-      <th>CC↑</th>
-      <th>SIM↑</th>
-      <th>KLD↓</th>
+      <th rowspan="2">Method</th>
+      <th rowspan="2">Model</th>
+      <th colspan="6"><b>RAINY</b></th>
+      <th colspan="6"><b>SNOWY</b></th>
+    </tr>
+    <tr>
+      <th>AUC_B↑</th> <th>AUC_J↑</th> <th>NSS↑</th> <th>CC↑</th> <th>SIM↑</th> <th>KLD↓</th>
+      <th>AUC_B↑</th> <th>AUC_J↑</th> <th>NSS↑</th> <th>CC↑</th> <th>SIM↑</th> <th>KLD↓</th>
     </tr>
   </thead>
 
   <tbody>
-    <tr>
-      <td>CDNN</td>
-      <td>0.8414</td>
-      <td>0.9310</td>
-      <td>3.2427</td>
-      <td>0.7034</td>
-      <td>0.5728</td>
-      <td>0.7197</td>
+
+    <!-- Traditional -->
+    <tr><td rowspan="5">Traditional</td>
+      <td>CDNN</td><td>0.866</td><td>0.920</td><td>3.048</td><td>0.469</td><td>0.288</td><td>1.738</td>
+                     <td>0.743</td><td>0.852</td><td>1.396</td><td>0.265</td><td>0.216</td><td>2.249</td>
     </tr>
 
     <tr>
-      <td>CPFE</td>
-      <td>0.8147</td>
-      <td>0.9201</td>
-      <td>2.5645</td>
-      <td>0.5720</td>
-      <td>0.4722</td>
-      <td>1.0185</td>
+      <td>CPFE</td><td>0.875</td><td>0.921</td><td>2.984</td><td>0.462</td><td>0.289</td><td>1.735</td>
+                   <td>0.735</td><td>0.841</td><td>1.328</td><td>0.255</td><td>0.212</td><td>2.329</td>
     </tr>
 
     <tr>
-      <td>TransalNet</td>
-      <td>0.8813</td>
-      <td>0.9502</td>
-      <td>4.1481</td>
-      <td>0.8259</td>
-      <td>0.6604</td>
-      <td>0.5332</td>
+      <td>Transal</td><td>0.841</td><td>0.905</td><td>2.555</td><td>0.408</td><td>0.266</td><td>1.929</td>
+                     <td><b>0.813</b></td><td>0.860</td><td>1.505</td><td>0.280</td><td>0.207</td><td>2.148</td>
     </tr>
 
     <tr>
-      <td>SCOUT</td>
-      <td>0.8215</td>
-      <td>0.9213</td>
-      <td>2.6879</td>
-      <td>0.7466</td>
-      <td>0.5985</td>
-      <td>0.6765</td>
+      <td>SCOUT</td><td>0.868</td><td>0.914</td><td>2.720</td><td>0.430</td><td>0.271</td><td>1.840</td>
+                   <td>0.734</td><td>0.840</td><td>1.296</td><td>0.248</td><td>0.209</td><td>2.373</td>
     </tr>
 
     <tr>
-      <td>STDENet</td>
-      <td><b>0.8970</b></td>
-      <td>0.9473</td>
-      <td>3.6444</td>
-      <td>0.7838</td>
-      <td>0.5971</td>
-      <td>0.5866</td>
+      <td>STDENet</td><td>0.877</td><td>0.926</td><td>3.170</td><td>0.489</td><td>0.318</td><td>1.647</td>
+                     <td>0.751</td><td>0.854</td><td>1.469</td><td>0.276</td><td>0.226</td><td>2.265</td>
+    </tr>
+
+    <!-- UDA -->
+    <tr><td rowspan="6">UDA</td>
+      <td>MT</td><td>0.874</td><td>0.917</td><td>2.844</td><td>0.444</td><td>0.281</td><td>1.785</td>
+                 <td>0.782</td><td><b>0.862</b></td><td>1.583</td><td><b>0.298</b></td><td>0.228</td><td><b>2.128</b></td>
     </tr>
 
     <tr>
-      <td>MT</td>
-      <td>0.8598</td>
-      <td>0.9350</td>
-      <td>3.4430</td>
-      <td>0.7319</td>
-      <td>0.5317</td>
-      <td>0.8020</td>
+      <td>DANN</td><td>0.858</td><td>0.912</td><td>2.720</td><td>0.425</td><td>0.264</td><td>1.862</td>
+                   <td>0.785</td><td>0.848</td><td>1.538</td><td>0.251</td><td>0.169</td><td>2.406</td>
     </tr>
 
     <tr>
-      <td>DANN</td>
-      <td>0.8879</td>
-      <td>0.9409</td>
-      <td>3.7646</td>
-      <td>0.7711</td>
-      <td>0.5605</td>
-      <td>0.7019</td>
+      <td>DRCN</td><td>0.815</td><td>0.893</td><td>2.556</td><td>0.396</td><td>0.240</td><td>2.021</td>
+                   <td>0.737</td><td>0.814</td><td>1.132</td><td>0.221</td><td>0.190</td><td>2.471</td>
     </tr>
 
     <tr>
-      <td>DRCN</td>
-      <td>0.8739</td>
-      <td>0.9413</td>
-      <td>3.8196</td>
-      <td>0.7683</td>
-      <td>0.5996</td>
-      <td>0.6592</td>
+      <td>HD2S</td><td>0.843</td><td>0.867</td><td>1.809</td><td>0.290</td><td>0.177</td><td>2.537</td>
+                   <td>0.536</td><td>0.529</td><td>0.243</td><td>0.052</td><td>0.090</td><td>2.998</td>
     </tr>
 
     <tr>
-      <td>HD2S</td>
-      <td>0.8700</td>
-      <td>0.9112</td>
-      <td>2.3348</td>
-      <td>0.5774</td>
-      <td>0.4733</td>
-      <td>1.0024</td>
+      <td>AT</td><td>0.871</td><td>0.915</td><td>2.762</td><td>0.434</td><td>0.273</td><td>1.830</td>
+                 <td>0.740</td><td>0.848</td><td>1.406</td><td>0.265</td><td>0.223</td><td>2.295</td>
     </tr>
 
     <tr>
-      <td>AT</td>
-      <td>0.8733</td>
-      <td>0.9394</td>
-      <td>3.6199</td>
-      <td>0.7725</td>
-      <td>0.5895</td>
-      <td>0.6660</td>
+      <td>MHDAN</td><td>0.850</td><td>0.900</td><td>2.430</td><td>0.388</td><td>0.234</td><td>2.029</td>
+                    <td>0.771</td><td>0.834</td><td>1.406</td><td>0.266</td><td>0.199</td><td>2.327</td>
+    </tr>
+
+    <!-- ZSDA -->
+    <tr><td rowspan="3">ZSDA</td>
+      <td>PØDA</td><td>0.868</td><td>0.925</td><td>3.226</td><td>0.497</td><td><b>0.327</b></td><td>1.626</td>
+                   <td>0.732</td><td>0.848</td><td>1.436</td><td>0.269</td><td>0.227</td><td>2.301</td>
     </tr>
 
     <tr>
-      <td>MHDAN</td>
-      <td>0.8956</td>
-      <td>0.9336</td>
-      <td>2.9539</td>
-      <td>0.6999</td>
-      <td>0.5092</td>
-      <td>0.7975</td>
+      <td>ULDA</td><td>0.876</td><td>0.915</td><td>2.849</td><td>0.447</td><td>0.282</td><td>1.810</td>
+                   <td>0.753</td><td>0.831</td><td>1.391</td><td>0.266</td><td>0.218</td><td>2.476</td>
     </tr>
 
     <tr>
-      <td><b>Ours</b></td>
-      <td>0.8864</td>
-      <td><b>0.9523</b></td>
-      <td><b>4.3103</b></td>
-      <td><b>0.8594</b></td>
-      <td><b>0.7042</b></td>
-      <td><b>0.4740</b></td>
-    </tr>
+      <td><b>Ours</b></td><td><b>0.877</b>
 
-  </tbody>
-</table>
-
-</div>
 
 
 <div align="center">
@@ -466,6 +418,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
