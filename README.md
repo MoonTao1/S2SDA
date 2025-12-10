@@ -13,7 +13,7 @@
 ## ✨Model  
 
 <div align="center">
-<img src="pic\model_00.png" width=1000" height="auto" />
+<img src="fig\model.png" width=1000" height="auto" />
 </div>
 
 
@@ -137,7 +137,7 @@
 ## 🚀 Quantitative Analysis
 
 <div align="center">
-<img src="pic\ridar_s_00.png" width="800" height="auto" />
+<img src="fig\visual.png" width="800" height="auto" />
 </div>
 >COMPARISON WITH OTHER METHODS FROM TraffiicGaze TO DRFIXD(RAINY)
 
@@ -450,5 +450,6 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
