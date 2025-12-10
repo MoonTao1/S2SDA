@@ -301,15 +301,20 @@
 </div>
 
 <div align="center">
+<img src="fig\rainy.png" width="1200" height="auto" />
+</div>
+
+
+<div align="center">
 <img src="fig\BDDA_visual.png" width="1200" height="auto" />
 </div>
 
 <div align="center">
-<img src="fig\DADA_night_visual.png" width="1200" height="auto" />
+<img src="fig\DADA_night_vis.png" width="1200" height="auto" />
 </div>
 
 <div align="center">
-<img src="fig\DADA_snowy_visual.png" width="1200" height="auto" />
+<img src="fig\DADA_snowy.png" width="1200" height="auto" />
 </div>
 
 
@@ -339,6 +344,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
