@@ -4,11 +4,11 @@
 
 ## 📰 News
 
-**[2025.2.15]** 🎈We have completed the training of the model and verified that it successfully enables the model to adapt to the rainy and night scenarios. 
+**[2025.8.27]** 🎈We have completed the training of the model and verified that it successfully enables the model to adapt to the rainy and night scenarios. 
 
-**[2025.4.07]** 🎈We have conducted more detailed experiments, performing both qualitative and quantitative comparisons with other advanced methods, as well as a parameter comparison.
+**[2025.11.15]** 🎈We have conducted more detailed experiments, performing both qualitative and quantitative comparisons with other advanced methods, as well as a parameter comparison.
 
-**[2025.5.26]** 🎈We will submit the article to ***PRCV*** (The 8th Chinese Conference on Pattern Recognition and Computer Vision).😃
+**[2025.12.2]** 🎈We will submit the article to ***ICME*** (IEEE International Conference on Multimedia and Expo 2026).😃
 
 ## ✨Model  
 
@@ -450,4 +450,5 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
