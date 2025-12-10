@@ -142,130 +142,146 @@
 >COMPARISON WITH OTHER METHODS FROM TraffiicGaze TO DRFIXD(RAINY)
 
 <div align="center">
-  <table border="1" style="margin: 0 auto;">
-    <thead>
-      <tr>
-        <th>Model</th>
-        <th>AUC_B↑</th>
-        <th>AUC_J↑</th>
-        <th>NSS↑</th>
-        <th>CC↑</th>
-        <th>SIM↑</th>
-        <th>KLD↓</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>CDNN</td>
-        <td>0.8414</td>
-        <td>0.9310</td>
-        <td>3.2427</td>
-        <td>0.7034</td>
-        <td>0.5728</td>
-        <td>0.7197</td>
-      </tr>
-      <tr>
-        <td>CPFE</td>
-        <td>0.8147</td>
-        <td>0.9201</td>
-        <td>2.5645 </td>
-        <td>0.5720</td>
-        <td>0.4722</td>
-        <td>1.0185</td>
-      </tr>
-      <tr>
-        <td>TransalNet</td>
-        <td>0.8813</td>
-        <td>0.9502</td>
-        <td>4.1481</td>
-        <td>0.8259</td>
-        <td>0.6604</td>
-        <td>0.5332</td>
-      </tr>
-      <tr>
-        <td>SCOUT</td>
-        <td>0.8215</td>
-        <td>0.9213</td>
-        <td>2.6879</td>
-        <td>0.7466</td>
-        <td>0.5985</td>
-        <td>0.6765</td>
-      </tr>
-      <tr>
-        <td>STDENet</td>
-        <td><strong>0.8970</strong></td>
-        <td>0.9473</td>
-        <td>3.6444 </td>
-        <td>0.7838</td>
-        <td>0.5971 </td>
-        <td>0.5866</td>
-      </tr>
-      <tr>
-        <td>MT</td>
-        <td>0.8598</td>
-        <td>0.9350</td>
-        <td>3.4430</td>
-        <td>0.7319</td>
-        <td>0.5317</td>
-        <td>0.8020</td>
-      </tr>
-      <tr>
-        <td>DANN</td>
-        <td>0.8879</td>
-        <td>0.9409</td>
-        <td>3.7646</td>
-        <td>0.7711</td>
-        <td>0.5605</td>
-        <td>0.7019</td>
-      </tr>
-      <tr>
-        <td>DRCN</td>
-        <td>0.8739</td>
-        <td>0.9413</td>
-        <td>3.8196</td>
-        <td>0.7683</td>
-        <td>0.5996</td>
-        <td>0.6592</td>
-      </tr>
-      <tr>
-        <td>HD2S</td>
-        <td>0.8700</td>
-        <td>0.9112</td>
-        <td>2.3348 </td>
-        <td>0.5774</td>
-        <td>0.4733</td>
-        <td>1.0024</td>
-      </tr>
-      <tr>
-        <td>AT</td>
-        <td>0.8733</td>
-        <td>0.9394</td>
-        <td>3.6199</td>
-        <td>0.7725</td>
-        <td>0.5895</td>
-        <td>0.6660</td>
-      </tr>
-      <tr>
-        <td>MHDAN</td>
-        <td>0.8956</td>
-        <td>0.9336</td>
-        <td>2.9539 </td>
-        <td>0.6999</td>
-        <td>0.5092</td>
-        <td>0.7975</td>
-      </tr>
-      <tr>
-        <td>Ours</td>
-        <td>0.8864</td>
-        <td><strong>0.9523</strong></td>
-        <td><strong>4.3103</strong></td>
-        <td><strong>0.8594</strong></td>
-        <td><strong>0.7042</strong></td>
-        <td><strong>0.4740</strong></td>
-      </tr>
-    </tbody>
-  </table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>AUC_B↑</th>
+      <th>AUC_J↑</th>
+      <th>NSS↑</th>
+      <th>CC↑</th>
+      <th>SIM↑</th>
+      <th>KLD↓</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>CDNN</td>
+      <td>0.8414</td>
+      <td>0.9310</td>
+      <td>3.2427</td>
+      <td>0.7034</td>
+      <td>0.5728</td>
+      <td>0.7197</td>
+    </tr>
+
+    <tr>
+      <td>CPFE</td>
+      <td>0.8147</td>
+      <td>0.9201</td>
+      <td>2.5645</td>
+      <td>0.5720</td>
+      <td>0.4722</td>
+      <td>1.0185</td>
+    </tr>
+
+    <tr>
+      <td>TransalNet</td>
+      <td>0.8813</td>
+      <td>0.9502</td>
+      <td>4.1481</td>
+      <td>0.8259</td>
+      <td>0.6604</td>
+      <td>0.5332</td>
+    </tr>
+
+    <tr>
+      <td>SCOUT</td>
+      <td>0.8215</td>
+      <td>0.9213</td>
+      <td>2.6879</td>
+      <td>0.7466</td>
+      <td>0.5985</td>
+      <td>0.6765</td>
+    </tr>
+
+    <tr>
+      <td>STDENet</td>
+      <td><b>0.8970</b></td>
+      <td>0.9473</td>
+      <td>3.6444</td>
+      <td>0.7838</td>
+      <td>0.5971</td>
+      <td>0.5866</td>
+    </tr>
+
+    <tr>
+      <td>MT</td>
+      <td>0.8598</td>
+      <td>0.9350</td>
+      <td>3.4430</td>
+      <td>0.7319</td>
+      <td>0.5317</td>
+      <td>0.8020</td>
+    </tr>
+
+    <tr>
+      <td>DANN</td>
+      <td>0.8879</td>
+      <td>0.9409</td>
+      <td>3.7646</td>
+      <td>0.7711</td>
+      <td>0.5605</td>
+      <td>0.7019</td>
+    </tr>
+
+    <tr>
+      <td>DRCN</td>
+      <td>0.8739</td>
+      <td>0.9413</td>
+      <td>3.8196</td>
+      <td>0.7683</td>
+      <td>0.5996</td>
+      <td>0.6592</td>
+    </tr>
+
+    <tr>
+      <td>HD2S</td>
+      <td>0.8700</td>
+      <td>0.9112</td>
+      <td>2.3348</td>
+      <td>0.5774</td>
+      <td>0.4733</td>
+      <td>1.0024</td>
+    </tr>
+
+    <tr>
+      <td>AT</td>
+      <td>0.8733</td>
+      <td>0.9394</td>
+      <td>3.6199</td>
+      <td>0.7725</td>
+      <td>0.5895</td>
+      <td>0.6660</td>
+    </tr>
+
+    <tr>
+      <td>MHDAN</td>
+      <td>0.8956</td>
+      <td>0.9336</td>
+      <td>2.9539</td>
+      <td>0.6999</td>
+      <td>0.5092</td>
+      <td>0.7975</td>
+    </tr>
+
+    <tr>
+      <td><b>Ours</b></td>
+      <td>0.8864</td>
+      <td><b>0.9523</b></td>
+      <td><b>4.3103</b></td>
+      <td><b>0.8594</b></td>
+      <td><b>0.7042</b></td>
+      <td><b>0.4740</b></td>
+    </tr>
+
+  </tbody>
+</table>
+
 </div>
+
 
 <div align="center">
 <img src="pic\vis_rainy_00.png" width="800" height="auto" />
@@ -450,6 +466,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
