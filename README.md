@@ -20,7 +20,7 @@
 >The architecture of our model. The encoder adopts a dual-branch architecture. Cross-modal fusion is then performed to integrate the two. The unlabeled target data does not go through the decoder.
 
 <div align="center">
-<img src="pic\vis_00.png" width=600" height="auto" />
+<img src="fig\vis_00.png" width=600" height="auto" />
 </div>
 >- 🟥 The red square represents elements that are not easily perceived during driving yet have the potential to cause accidents.
  - 🟡 Indicates distracting factors unrelated to the driving task.
@@ -29,7 +29,7 @@
 ## 💻 Dataset
 
 <div align="center">
-<img src="pic\dataset.png" width=1000" height="auto" />
+<img src="fig\dataset.png" width=1000" height="auto" />
 </div>
 
 
@@ -315,6 +315,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
