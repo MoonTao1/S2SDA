@@ -29,11 +29,8 @@
 ## 💻 Dataset
 
 <div align="center">
-<img src="fig\dataset.png" width=1000" height="auto" />
+<img src="fig\dataset.png" width=70%" height="auto" />
 </div>
-
-
-
 
 
 
@@ -275,11 +272,12 @@
 <img src="fig\rainy.png" width="1200" height="auto" />
 </div>
 
-
+>Qualitative evaluation comparison of proposed model and the other methods from sunny to other weather on BDDA. 
 <div align="center">
 <img src="fig\BDDA_visual.png" width="1200" height="auto" />
 </div>
 
+>Qualitative evaluation comparison of proposed model and the other methods from sunny to other weather on DADA. 
 <div align="center">
 <img src="fig\DADA_night_vis.png" width="1200" height="auto" />
 </div>
@@ -315,6 +313,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
