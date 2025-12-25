@@ -19,16 +19,16 @@
 
 >The architecture of our model. The encoder adopts a dual-branch architecture. Cross-modal fusion is then performed to integrate the two. The unlabeled target data does not go through the decoder.
 
-✨ Contributions
+## ✨ Contributions
 
-Pixel-level Prompt-Induced Normalization (PPIN).
-We propose PPIN, a pixel-level prompt-induced normalization module that integrates prompt-driven global weather priors with saliency-guided refinement, generating residual style offsets for spatially adaptive feature modulation. This design enables effective zero-shot cross-weather adaptation without requiring target-domain annotations.
+- **[PPIN] Pixel-level Prompt-Induced Normalization**  
+  A pixel-level prompt-induced normalization module that integrates prompt-driven global weather priors with saliency-guided refinement to generate residual style offsets, enabling spatially adaptive feature modulation for zero-shot cross-weather adaptation.
 
-Mask-Guided Backbone Modulation.
-We introduce a mask-guided modulation strategy that leverages saliency masks to steer early feature extraction toward weather-sensitive structural regions. A subsequent Mask-Guidance Fusion Module further consolidates guided representations, significantly improving structural consistency and reconstruction quality under adverse weather conditions.
+- **[Mask-Guided] Backbone Modulation and Fusion**  
+  A mask-guided modulation strategy where saliency masks steer early feature extraction toward weather-sensitive structural regions. The proposed Mask-Guidance Fusion Module further consolidates guided features, improving structural consistency under adverse weather.
 
-Cross-weather Benchmarking and Evaluation.
-We reorganize multiple public driving datasets according to fine-grained weather conditions and conduct extensive cross-weather evaluations. Experimental results demonstrate that S2SDA consistently outperforms existing methods across diverse adverse-weather scenarios.
+- **[Benchmark] Cross-weather Evaluation Protocol**  
+  We reorganize multiple public driving datasets according to fine-grained weather conditions and conduct extensive cross-weather evaluations, where **S2SDA consistently outperforms existing methods**.
 
 ## 💻 Dataset
 
@@ -264,6 +264,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
