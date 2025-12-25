@@ -299,19 +299,16 @@
   </table>
 </div>
 
-<div align="center">
-<img src="fig\visual.png" width="1200" height="auto" />
-</div>
 
 
 ## 🚀Visualisation of intermediate results
 >Qualitative evaluation comparison of proposed model and the other methods from sunny dataset TrafficGaze to rainy dataset DrFixD(rainy). The circles highlight objects/areas in the driving scene that disrupt the driver's attention.
 <div align="center">
-<img src="fig\visual.png" width="800" height="auto" />
+<img src="fig\visual.png" width="80%" height="auto" />
 </div>
 
 <div align="center">
-<img src="fig\visual_ex.png" width="60%" height="auto" />
+<img src="fig\visual_ex.png" width="50%" height="auto" />
 </div>
 
 
@@ -367,6 +364,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
