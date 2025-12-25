@@ -118,7 +118,6 @@
   &emsp;&emsp;├── gazemap_frames/ <br>
   &emsp;&emsp;│&emsp;&emsp;├── 0002/ （0002 ~ 2017）<br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;├── 0001.jpg<br>
-  &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;├── 0002.jpg<br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── ... ... <br>
   &emsp;&emsp;│&emsp;&emsp;├── 0003/ <br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── 0001.jpg、0002.jpg、... ...<br>
@@ -126,7 +125,6 @@
   &emsp;&emsp;├── camera_frames/ <br>
   &emsp;&emsp;│&emsp;&emsp;├── 0002/ （0002 ~ 2017）<br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;├── 0001.jpg<br>
-  &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;├── 0002.jpg<br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── ... ... <br>
   &emsp;&emsp;│&emsp;&emsp;├── 0003/ <br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── 0001.jpg、0002.jpg、... ...<br>
@@ -143,23 +141,18 @@
   &emsp;&emsp;|&emsp;&emsp;|—— 001<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— fixation<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 001.png<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 002.png<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— images<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 001.png<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 002.png<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— maps<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 001.png<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 002.png<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— seg<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 001.png<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 002.png<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— semantic<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 001.png<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 002.png<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
   &emsp;&emsp;|&emsp;&emsp;|—— 002<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— fixation、images、maps、seg、semantic<br>
@@ -264,6 +257,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
