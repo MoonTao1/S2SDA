@@ -267,7 +267,7 @@
 <div align="center">
 <img src="fig\night.png" width="1200" height="auto" />
 </div>
-
+>Qualitative evaluation comparison of proposed model and the other methods from sunny dataset TrafficGaze to night dataset DrFixD(rainy). 
 <div align="center">
 <img src="fig\rainy.png" width="1200" height="auto" />
 </div>
@@ -313,6 +313,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
