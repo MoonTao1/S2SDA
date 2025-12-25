@@ -171,8 +171,22 @@
 ## 🚀 Quantitative Analysis
 
 
->COMPARISON WITH OTHER METHODS FROM TraffiicGaze TO DRFIXD(NIGHT)
-
+>COMPARISON WITH OTHER METHODS
+>Quantitative evaluation comparison of proposed model and the other methods from sunny to other weather on DADA.
+<div align="center">
+<img src="fig\DADA.png" width="80%" height="auto" />
+</div>
+<div align="center">
+<img src="fig\DADA_mean.png" width="80%" height="auto" />
+</div>
+>Quantitative evaluation comparison of proposed model and the other methods from sunny to other weather on BDDA.
+<div align="center">
+<img src="fig\BDDA.png" width="80%" height="auto" />
+</div>
+>Quantitative evaluation comparison of proposed model and the other methods from sunny dataset TrafficGaze to rainy dataset DrFixD(rainy) and night dataset DrFixD(night).
+<div align="center">
+<img src="fig\Traffic.png" width="80%" height="auto" />
+</div>
 
 
 
@@ -240,6 +254,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
