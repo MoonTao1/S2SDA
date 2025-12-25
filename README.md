@@ -28,23 +28,10 @@
 
 ## 💻 Dataset
 
-<p align="center">
-  <img src="pic/dataset.png" width="700">
-</p>
+<div align="center">
+<img src="pic\dataset.png" width=1000" height="auto" />
+</div>
 
-| Dataset | Weather | Train | Valid | Test |
-|--------|---------|-------|-------|------|
-| **DADA** | sunny | 24052 | 3492 | 5965 |
-|        | rainy | 12994 | 2887 | 5778 |
-|        | night | 19965 | 2566 | 14687 |
-|        | foggy | 848 | 187 | 378 |
-|        | snowy | 544 | 121 | 242 |
-| **BDDA** | sunny | 26883 | 10858 | 16375 |
-|        | rainy | 3212 | 553 | 1168 |
-|        | night | 7592 | 3939 | 3504 |
-| **TrafficGaze** | sunny | 49080 | 6655 | 19135 |
-| **DrFixD** | night | 41987 | 10319 | 14773 |
-|          | rainy | 52291 | 9816 | 19154 |
 
 
 
