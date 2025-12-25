@@ -1,4 +1,4 @@
-<img width="1442" height="1112" alt="image" src="https://github.com/user-attachments/assets/6416d69e-87a2-48af-b304-d3fc2ee42c42" /># Driving Fixation Prediction for Clear-to-Adverse Weather Scenes via Adversarial Unsupervised Domain Adaptation
+# Driving Fixation Prediction for Clear-to-Adverse Weather Scenes via Adversarial Unsupervised Domain Adaptation
 
 ​	[note] We will release our complete code after the paper is **accepted** ✔️! Please look forward to it.🕓
 
@@ -240,6 +240,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
