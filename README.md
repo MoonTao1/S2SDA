@@ -26,14 +26,10 @@
  - 🟡 Indicates distracting factors unrelated to the driving task.
 
 
-## 💻Dataset
+## 💻 Dataset
 
 <div align="center">
-<img src="pic\dataset.png" width="700" height="auto" />
-</div>
-
-<div align="center">
-  <img src="pic/dataset.png" width="700" height="auto" />
+  <img src="pic/dataset.png" width="700" />
 </div>
 
 <br>
@@ -50,7 +46,6 @@
       </tr>
     </thead>
     <tbody>
-      <!-- DADA -->
       <tr>
         <td rowspan="5"><b>DADA</b></td>
         <td>sunny</td>
@@ -83,7 +78,6 @@
         <td>242</td>
       </tr>
 
-      <!-- BDDA -->
       <tr>
         <td rowspan="3"><b>BDDA</b></td>
         <td>sunny</td>
@@ -104,7 +98,6 @@
         <td>3504</td>
       </tr>
 
-      <!-- Others -->
       <tr>
         <td><b>TrafficGaze</b></td>
         <td>sunny</td>
@@ -129,6 +122,7 @@
     </tbody>
   </table>
 </div>
+
 
 
 >The datasets are organized as follows.
