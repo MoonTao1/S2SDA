@@ -34,100 +34,99 @@
 
 <br>
 
-<div align="center">
-  <table>
-    <thead>
-      <tr>
-        <th>Dataset</th>
-        <th>Weather</th>
-        <th>Train</th>
-        <th>Valid</th>
-        <th>Test</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><b>DADA</b></td>
-        <td>sunny</td>
-        <td>24052</td>
-        <td>3492</td>
-        <td>5965</td>
-      </tr>
-      <tr>
-        <td><b>DADA</b></td>
-        <td>rainy</td>
-        <td>12994</td>
-        <td>2887</td>
-        <td>5778</td>
-      </tr>
-      <tr>
-        <td><b>DADA</b></td>
-        <td>night</td>
-        <td>19965</td>
-        <td>2566</td>
-        <td>14687</td>
-      </tr>
-      <tr>
-        <td><b>DADA</b></td>
-        <td>foggy</td>
-        <td>848</td>
-        <td>187</td>
-        <td>378</td>
-      </tr>
-      <tr>
-        <td><b>DADA</b></td>
-        <td>snowy</td>
-        <td>544</td>
-        <td>121</td>
-        <td>242</td>
-      </tr>
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Weather</th>
+      <th>Train</th>
+      <th>Valid</th>
+      <th>Test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>DADA</b></td>
+      <td>sunny</td>
+      <td>24052</td>
+      <td>3492</td>
+      <td>5965</td>
+    </tr>
+    <tr>
+      <td><b>DADA</b></td>
+      <td>rainy</td>
+      <td>12994</td>
+      <td>2887</td>
+      <td>5778</td>
+    </tr>
+    <tr>
+      <td><b>DADA</b></td>
+      <td>night</td>
+      <td>19965</td>
+      <td>2566</td>
+      <td>14687</td>
+    </tr>
+    <tr>
+      <td><b>DADA</b></td>
+      <td>foggy</td>
+      <td>848</td>
+      <td>187</td>
+      <td>378</td>
+    </tr>
+    <tr>
+      <td><b>DADA</b></td>
+      <td>snowy</td>
+      <td>544</td>
+      <td>121</td>
+      <td>242</td>
+    </tr>
 
-      <tr>
-        <td><b>BDDA</b></td>
-        <td>sunny</td>
-        <td>26883</td>
-        <td>10858</td>
-        <td>16375</td>
-      </tr>
-      <tr>
-        <td><b>BDDA</b></td>
-        <td>rainy</td>
-        <td>3212</td>
-        <td>553</td>
-        <td>1168</td>
-      </tr>
-      <tr>
-        <td><b>BDDA</b></td>
-        <td>night</td>
-        <td>7592</td>
-        <td>3939</td>
-        <td>3504</td>
-      </tr>
+    <tr>
+      <td><b>BDDA</b></td>
+      <td>sunny</td>
+      <td>26883</td>
+      <td>10858</td>
+      <td>16375</td>
+    </tr>
+    <tr>
+      <td><b>BDDA</b></td>
+      <td>rainy</td>
+      <td>3212</td>
+      <td>553</td>
+      <td>1168</td>
+    </tr>
+    <tr>
+      <td><b>BDDA</b></td>
+      <td>night</td>
+      <td>7592</td>
+      <td>3939</td>
+      <td>3504</td>
+    </tr>
 
-      <tr>
-        <td><b>TrafficGaze</b></td>
-        <td>sunny</td>
-        <td>49080</td>
-        <td>6655</td>
-        <td>19135</td>
-      </tr>
-      <tr>
-        <td><b>DrFixD (night)</b></td>
-        <td>night</td>
-        <td>41987</td>
-        <td>10319</td>
-        <td>14773</td>
-      </tr>
-      <tr>
-        <td><b>DrFixD (rainy)</b></td>
-        <td>rainy</td>
-        <td>52291</td>
-        <td>9816</td>
-        <td>19154</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+      <td><b>TrafficGaze</b></td>
+      <td>sunny</td>
+      <td>49080</td>
+      <td>6655</td>
+      <td>19135</td>
+    </tr>
+    <tr>
+      <td><b>DrFixD (night)</b></td>
+      <td>night</td>
+      <td>41987</td>
+      <td>10319</td>
+      <td>14773</td>
+    </tr>
+    <tr>
+      <td><b>DrFixD (rainy)</b></td>
+      <td>rainy</td>
+      <td>52291</td>
+      <td>9816</td>
+      <td>19154</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -409,6 +408,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
