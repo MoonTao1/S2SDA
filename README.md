@@ -1,4 +1,4 @@
-# Driving Fixation Prediction for Clear-to-Adverse Weather Scenes via Adversarial Unsupervised Domain Adaptation
+<img width="1442" height="1112" alt="image" src="https://github.com/user-attachments/assets/6416d69e-87a2-48af-b304-d3fc2ee42c42" /># Driving Fixation Prediction for Clear-to-Adverse Weather Scenes via Adversarial Unsupervised Domain Adaptation
 
 ​	[note] We will release our complete code after the paper is **accepted** ✔️! Please look forward to it.🕓
 
@@ -173,131 +173,7 @@
 
 >COMPARISON WITH OTHER METHODS FROM TraffiicGaze TO DRFIXD(NIGHT)
 
-<div align="center">
-  <table border="1" style="margin: 0 auto;">
-    <thead>
-      <tr>
-        <th>Model</th>
-        <th>AUC_B↑</th>
-        <th>AUC_J↑</th>
-        <th>NSS↑</th>
-        <th>CC↑</th>
-        <th>SIM↑</th>
-        <th>KLD↓</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>CDNN</td>
-        <td>0.7618</td>
-        <td>0.8591</td>
-        <td>1.8446</td>
-        <td>0.5071</td>
-        <td>0.4002</td>
-        <td>1.2286</td>
-      </tr>
-      <tr>
-        <td>CPFE</td>
-        <td>0.7992</td>
-        <td>0.9111</td>
-        <td>3.2687</td>
-        <td>0.6979</td>
-        <td>0.5737</td>
-        <td>0.7530</td>
-      </tr>
-      <tr>
-        <td>TransalNet</td>
-        <td>0.8404</td>
-        <td>0.9390</td>
-        <td>3.2687</td>
-        <td>0.6979</td>
-        <td>0.5737</td>
-        <td>0.7530</td>
-      </tr>
-      <tr>
-        <td>SCOUT</td>
-        <td>0.8269</td>
-        <td>0.9122</td>
-        <td>2.6843</td>
-        <td>0.6091</td>
-        <td>0.4960</td>
-        <td>1.0103</td>
-      </tr>
-      <tr>
-        <td>STDENet</td>
-        <td>0.8676</td>
-        <td>0.9345 </td>
-        <td>3.1000 </td>
-        <td>0.7105</td>
-        <td>0.5687</td>
-        <td>0.7531</td>
-      </tr>
-      <tr>
-        <td>MT</td>
-        <td>0.8212</td>
-        <td>0.9204</td>
-        <td>3.0749</td>
-        <td>0.6752</td>
-        <td>0.5474 </td>
-        <td>0.8865</td>
-      </tr>
-      <tr>
-        <td>DANN</td>
-        <td>0.8342</td>
-        <td>0.9021</td>
-        <td>2.4349</td>
-        <td>0.5414</td>
-        <td>0.4024</td>
-        <td>1.2041</td>
-      </tr>
-      <tr>
-        <td>DRCN</td>
-        <td>0.8224</td>
-        <td>0.9174</td>
-        <td>2.6752</td>
-        <td>0.6258</td>
-        <td>0.5099</td>
-        <td>0.9422</td>
-      </tr>
-      <tr>
-        <td>HD2S</td>
-        <td>0.8699</td>
-        <td>0.9113</td>
-        <td>2.3358</td>
-        <td>0.5774</td>
-        <td>0.4733</td>
-        <td>1.0028</td>
-      </tr>
-      <tr>
-        <td>AT</td>
-        <td>0.8650</td>
-        <td>0.9385</td>
-        <td>3.0265</td>
-        <td>0.6971</td>
-        <td>0.5696</td>
-        <td>0.7431</td>
-      </tr>
-      <tr>
-        <td>MHDAN</td>
-        <td><strong>0.8763</strong></td>
-        <td>0.9109</td>
-        <td>2.5688 </td>
-        <td>0.6403</td>
-        <td>0.4701</td>
-        <td>0.9794</td>
-      </tr>
-      <tr>
-        <td>Ours</td>
-        <td><strong>0.8763</strong></td>
-        <td><strong>0.9401</strong></td>
-        <td><strong>3.3666</strong></td>
-        <td><strong>0.7498</strong></td>
-        <td><strong>0.5976</strong></td>
-        <td><strong>0.6528</strong></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+
 
 
 
@@ -364,6 +240,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
