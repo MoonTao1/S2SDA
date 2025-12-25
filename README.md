@@ -65,6 +65,21 @@
 </table>
 </div>
 
+### Dataset Statistics
+
+| Dataset            | Weather | Training | Validation | Test |
+|--------------------|---------|----------|------------|------|
+| **DADA**           | sunny   | 24,052   | 3,492      | 5,965 |
+|                    | rainy   | 12,994   | 2,887      | 5,778 |
+|                    | night   | 19,965   | 2,566      | 14,687 |
+|                    | foggy   | 848      | 187        | 378 |
+|                    | snowy   | 544      | 121        | 242 |
+| **BDDA**           | sunny   | 26,883   | 10,858     | 16,375 |
+|                    | rainy   | 3,212    | 553        | 1,168 |
+|                    | night   | 7,592    | 3,939      | 3,504 |
+| **TrafficGaze**    | sunny   | 49,080   | 6,655      | 19,135 |
+| **DrFixD (night)** | night   | 41,987   | 10,319     | 14,773 |
+| **DrFixD (rainy)** | rainy   | 52,291   | 9,816      | 19,154 |
 
 >The datasets are organized as follows.
 <div align="center">
@@ -344,6 +359,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
