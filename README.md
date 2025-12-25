@@ -125,8 +125,9 @@
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;├── 0002.jpg<br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── ... ... <br>
   &emsp;&emsp;│&emsp;&emsp;├── 0003/ <br>
-  &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── 0001.jpg、0002.jpg、... ...（同0002结构）<br>
+  &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── 0001.jpg、0002.jpg、... ...<br>
   &emsp;&emsp;│&emsp;&emsp;└── ... ... <br>
+    
   &emsp;&emsp;├── test_night.json <br>
   &emsp;&emsp;├── train_night.json <br>
   &emsp;&emsp;├── valid_night.json <br>
@@ -160,14 +161,14 @@
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— fixation、images、maps、seg、semantic<br>
   &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
   &emsp;&emsp;|—— 02<br>
-  &emsp;&emsp;|&emsp;&emsp;|—— 子视频编号 + fixation/images/maps/seg/semantic<br>
+  &emsp;&emsp;|&emsp;&emsp;|—— + fixation/images/maps/seg/semantic<br>
   &emsp;&emsp;|—— ... ...）
+   
   &emsp;&emsp;├── test_night.json <br>
   &emsp;&emsp;├── train_night.json <br>
   &emsp;&emsp;├── valid_night.json <br>
   &emsp;&emsp;└── ... ... 
 </td>
-写法二：清晰
   </tr>
 </table>
 </div>
@@ -384,6 +385,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
