@@ -111,57 +111,61 @@
   <tr>
    <td>
   ./BDDA<br>
-  &emsp;&emsp;├── gazemap_frames/ （凝视图帧文件夹）<br>
-  &emsp;&emsp;│&emsp;&emsp;├── 0002/ （视频文件夹：0002 ~ 2017）<br>
+  &emsp;&emsp;├── gazemap_frames/ <br>
+  &emsp;&emsp;│&emsp;&emsp;├── 0002/ （0002 ~ 2017）<br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;├── 0001.jpg<br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;├── 0002.jpg<br>
-  &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── ... ... （后续编号jpg图片）<br>
-  &emsp;&emsp;│&emsp;&emsp;├── 0003/ （视频文件夹编号）<br>
-  &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── 0001.jpg、0002.jpg、... ...（同0002结构）<br>
-  &emsp;&emsp;│&emsp;&emsp;└── ... ... （更多视频文件夹，编号至2017）<br>
-  &emsp;&emsp;├── camera_frames/ （相机图帧文件夹）<br>
-  &emsp;&emsp;│&emsp;&emsp;├── 0002/ （视频文件夹：0002 ~ 2017）<br>
+  &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── ... ... <br>
+  &emsp;&emsp;│&emsp;&emsp;├── 0003/ <br>
+  &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── 0001.jpg、0002.jpg、... ...<br>
+  &emsp;&emsp;│&emsp;&emsp;└── ... ... <br>
+  &emsp;&emsp;├── camera_frames/ <br>
+  &emsp;&emsp;│&emsp;&emsp;├── 0002/ （0002 ~ 2017）<br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;├── 0001.jpg<br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;├── 0002.jpg<br>
-  &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── ... ... （后续编号jpg图片）<br>
-  &emsp;&emsp;│&emsp;&emsp;├── 0003/ （视频文件夹编号）<br>
+  &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── ... ... <br>
+  &emsp;&emsp;│&emsp;&emsp;├── 0003/ <br>
   &emsp;&emsp;│&emsp;&emsp;│&emsp;&emsp;└── 0001.jpg、0002.jpg、... ...（同0002结构）<br>
-  &emsp;&emsp;│&emsp;&emsp;└── ... ... （更多视频文件夹，编号至2017）<br>
-  &emsp;&emsp;├── test.json （测试集天气相关配置文件）<br>
-  &emsp;&emsp;├── train.json （训练集天气相关配置文件）<br>
-  &emsp;&emsp;├── valid.json （验证集天气相关配置文件）<br>
-  &emsp;&emsp;└── ... ... （其他不同天气类型的json文件）
+  &emsp;&emsp;│&emsp;&emsp;└── ... ... <br>
+  &emsp;&emsp;├── test_night.json <br>
+  &emsp;&emsp;├── train_night.json <br>
+  &emsp;&emsp;├── valid_night.json <br>
+  &emsp;&emsp;└── ... ... 
 </td>
   <td>
   ./DADA<br>
-  &emsp;&emsp;|—— 01（视频编号，1~52）<br>
-  &emsp;&emsp;|&emsp;&emsp;|—— 001（子视频编号，按需层级展示）<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— fixation（注视点文件夹）<br>
+  &emsp;&emsp;|—— 01（1~52）<br>
+  &emsp;&emsp;|&emsp;&emsp;|—— 001<br>
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— fixation<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 001.png<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 002.png<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...（编号png图片）<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— images（图片文件夹）<br>
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— images<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 001.png<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 002.png<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...（编号png图片）<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— maps（映射文件夹）<br>
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— maps<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 001.png<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 002.png<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...（编号png图片）<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— seg（分割文件夹）<br>
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— seg<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 001.png<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 002.png<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...（编号png图片）<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— semantic（语义文件夹）<br>
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— semantic<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 001.png<br>
   &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— 002.png<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...（编号png图片）<br>
-  &emsp;&emsp;|&emsp;&emsp;|—— 002（子视频编号）<br>
-  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— fixation、images、maps、seg、semantic（同上述结构）<br>
-  &emsp;&emsp;|&emsp;&emsp;|—— ... ...（更多子视频编号）<br>
-  &emsp;&emsp;|—— 02（视频编号）<br>
-  &emsp;&emsp;|&emsp;&emsp;|—— 子视频编号 + fixation/images/maps/seg/semantic（同上述结构）<br>
-  &emsp;&emsp;|—— ... ...（视频编号3~52，均遵循上述目录结构）
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+  &emsp;&emsp;|&emsp;&emsp;|—— 002<br>
+  &emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|—— fixation、images、maps、seg、semantic<br>
+  &emsp;&emsp;|&emsp;&emsp;|—— ... ...<br>
+  &emsp;&emsp;|—— 02<br>
+  &emsp;&emsp;|&emsp;&emsp;|—— 子视频编号 + fixation/images/maps/seg/semantic<br>
+  &emsp;&emsp;|—— ... ...）
+  &emsp;&emsp;├── test_night.json <br>
+  &emsp;&emsp;├── train_night.json <br>
+  &emsp;&emsp;├── valid_night.json <br>
+  &emsp;&emsp;└── ... ... 
 </td>
 写法二：清晰
   </tr>
@@ -380,6 +384,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
