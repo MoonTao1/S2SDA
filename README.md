@@ -33,53 +33,103 @@
 </div>
 
 <div align="center">
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Train (video/frame)</th>
-      <th>Valid (video/frame)</th>
-      <th>Test (video/frame)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>TrafficGaze</td>
-      <td>49080</td>
-      <td>6655</td>
-      <td>19135</td>
-    </tr>
-    <tr>
-      <td>DrFixD(rainy)</td>
-      <td>52291</td>
-      <td>9816</td>
-      <td>19154</td>
-    </tr>
-    <tr>
-      <td>DrFixD(night)</td>
-      <td>41987</td>
-      <td>10319</td>
-      <td>14773</td>
-    </tr>
-  </tbody>
-</table>
+  <img src="pic/dataset.png" width="700" height="auto" />
 </div>
 
-### Dataset Statistics
+<br>
 
-| Dataset            | Weather | Training | Validation | Test |
-|--------------------|---------|----------|------------|------|
-| **DADA**           | sunny   | 24,052   | 3,492      | 5,965 |
-|                    | rainy   | 12,994   | 2,887      | 5,778 |
-|                    | night   | 19,965   | 2,566      | 14,687 |
-|                    | foggy   | 848      | 187        | 378 |
-|                    | snowy   | 544      | 121        | 242 |
-| **BDDA**           | sunny   | 26,883   | 10,858     | 16,375 |
-|                    | rainy   | 3,212    | 553        | 1,168 |
-|                    | night   | 7,592    | 3,939      | 3,504 |
-| **TrafficGaze**    | sunny   | 49,080   | 6,655      | 19,135 |
-| **DrFixD (night)** | night   | 41,987   | 10,319     | 14,773 |
-| **DrFixD (rainy)** | rainy   | 52,291   | 9,816      | 19,154 |
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th>Dataset</th>
+        <th>Weather</th>
+        <th>Train</th>
+        <th>Valid</th>
+        <th>Test</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- DADA -->
+      <tr>
+        <td rowspan="5"><b>DADA</b></td>
+        <td>sunny</td>
+        <td>24052</td>
+        <td>3492</td>
+        <td>5965</td>
+      </tr>
+      <tr>
+        <td>rainy</td>
+        <td>12994</td>
+        <td>2887</td>
+        <td>5778</td>
+      </tr>
+      <tr>
+        <td>night</td>
+        <td>19965</td>
+        <td>2566</td>
+        <td>14687</td>
+      </tr>
+      <tr>
+        <td>foggy</td>
+        <td>848</td>
+        <td>187</td>
+        <td>378</td>
+      </tr>
+      <tr>
+        <td>snowy</td>
+        <td>544</td>
+        <td>121</td>
+        <td>242</td>
+      </tr>
+
+      <!-- BDDA -->
+      <tr>
+        <td rowspan="3"><b>BDDA</b></td>
+        <td>sunny</td>
+        <td>26883</td>
+        <td>10858</td>
+        <td>16375</td>
+      </tr>
+      <tr>
+        <td>rainy</td>
+        <td>3212</td>
+        <td>553</td>
+        <td>1168</td>
+      </tr>
+      <tr>
+        <td>night</td>
+        <td>7592</td>
+        <td>3939</td>
+        <td>3504</td>
+      </tr>
+
+      <!-- Others -->
+      <tr>
+        <td><b>TrafficGaze</b></td>
+        <td>sunny</td>
+        <td>49080</td>
+        <td>6655</td>
+        <td>19135</td>
+      </tr>
+      <tr>
+        <td><b>DrFixD (night)</b></td>
+        <td>night</td>
+        <td>41987</td>
+        <td>10319</td>
+        <td>14773</td>
+      </tr>
+      <tr>
+        <td><b>DrFixD (rainy)</b></td>
+        <td>rainy</td>
+        <td>52291</td>
+        <td>9816</td>
+        <td>19154</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 >The datasets are organized as follows.
 <div align="center">
@@ -359,6 +409,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
