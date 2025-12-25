@@ -47,31 +47,35 @@
     </thead>
     <tbody>
       <tr>
-        <td rowspan="5"><b>DADA</b></td>
+        <td><b>DADA</b></td>
         <td>sunny</td>
         <td>24052</td>
         <td>3492</td>
         <td>5965</td>
       </tr>
       <tr>
+        <td><b>DADA</b></td>
         <td>rainy</td>
         <td>12994</td>
         <td>2887</td>
         <td>5778</td>
       </tr>
       <tr>
+        <td><b>DADA</b></td>
         <td>night</td>
         <td>19965</td>
         <td>2566</td>
         <td>14687</td>
       </tr>
       <tr>
+        <td><b>DADA</b></td>
         <td>foggy</td>
         <td>848</td>
         <td>187</td>
         <td>378</td>
       </tr>
       <tr>
+        <td><b>DADA</b></td>
         <td>snowy</td>
         <td>544</td>
         <td>121</td>
@@ -79,19 +83,21 @@
       </tr>
 
       <tr>
-        <td rowspan="3"><b>BDDA</b></td>
+        <td><b>BDDA</b></td>
         <td>sunny</td>
         <td>26883</td>
         <td>10858</td>
         <td>16375</td>
       </tr>
       <tr>
+        <td><b>BDDA</b></td>
         <td>rainy</td>
         <td>3212</td>
         <td>553</td>
         <td>1168</td>
       </tr>
       <tr>
+        <td><b>BDDA</b></td>
         <td>night</td>
         <td>7592</td>
         <td>3939</td>
@@ -403,6 +409,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
