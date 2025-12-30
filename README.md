@@ -1,4 +1,4 @@
-# Driving Fixation Prediction for Clear-to-Adverse Weather Scenes via Adversarial Unsupervised Domain Adaptation
+# Prompt-Guided Semantic Refinement for Cross-Weather Driving Saliency Adaptation
 
 ​	[note] We will release our complete code after the paper is **accepted** ✔️! Please look forward to it.🕓
 
@@ -257,6 +257,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
