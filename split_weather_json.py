@@ -1,8 +1,8 @@
 import random
 
 # ===== 配置 =====
-input_json = "/nfs/3x4090/data/workspace/dataset/BDDA-ALL/BDDA-frame/test_sunny.json"
-output_json = "/nfs/3x4090/data/workspace/dataset/BDDA-ALL/BDDA-frame/test_sunny.json"
+input_json = "/dataset/BDDA-ALL/BDDA-frame/test_sunny.json"
+output_json = "/dataset/BDDA-ALL/BDDA-frame/test_sunny.json"
 
 ratio = 0.2  # 抽取比例（十分之一）
 
@@ -28,3 +28,4 @@ with open(output_json, "w") as f:
 
 print(f"✅ 已生成新 JSON：{output_json}")
 print(f"原始 {len(lines)} 行 → 保留 {len(filtered_lines)} 行")
+
