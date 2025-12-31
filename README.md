@@ -18,9 +18,7 @@
 
 
 >The architecture of our model. The encoder adopts a dual-branch architecture. Cross-modal fusion is then performed to integrate the two. The unlabeled target data does not go through the decoder.
-<div align="center">
-<img src="fig\ridar.png" width=60%" height="auto" />
-</div>
+
 ## ✨ Contributions
 
 - **[PGSAN] Prompt-Guided Structure-Aware Normalization**  
@@ -184,16 +182,19 @@
 <div align="center">
 <img src="fig\DADA_mean.jpg" width="50%" height="auto" />
 </div>
->Quantitative evaluation comparison of proposed model and the other methods from sunny to other weather on BDDA.
-<div align="center">
-<img src="fig\BDDA.jpg" width="60%" height="auto" />
-</div>
 >Quantitative evaluation comparison of proposed model and the other methods from sunny dataset TrafficGaze to rainy dataset DrFixD(rainy) and night dataset DrFixD(night).
 <div align="center">
 <img src="fig\Traffic.jpg" width="80%" height="auto" />
 </div>
+>Quantitative evaluation comparison of proposed model and the other methods from sunny to other weather on BDDA.
+<div align="center">
+<img src="fig\BDDA.jpg" width="60%" height="auto" />
+</div>
 
-
+>Visualization radar chart of the experimental results on DADA, DrFixD, and BDDA..
+<div align="center">
+<img src="fig\ridar.png" width=60%" height="auto" />
+</div>
 
 
 ## 🚀Visualisation of intermediate results
@@ -259,6 +260,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
