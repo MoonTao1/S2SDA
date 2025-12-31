@@ -29,11 +29,8 @@ parser.add_argument('--seq_len', default=1, type=int)
 parser.add_argument('--img_shape', default=(256, 256), type=lambda s: tuple(map(int, s.split(','))))
 # parser.add_argument('--category_rainy', default='DrFixD_rainy', type=str, help='select [BDDA or TrafficGaze or DrFixD_rainy]')
 parser.add_argument('--category', default='DADA', type=str, help='select [BDDA or TrafficGaze or DrFixD_rainy]')
-# parser.add_argument('--root', default='/data/workspace/mwt/traffic_dataset/', type=str)
-# parser.add_argument('--root', default='/nfs/8x3090/data/workspace/zcm/dataset/DrFixD-rainy/', type=str)
-# parser.add_argument('--root', default='/nfs/8x3090/data9102/workspace/mwt/dataset/night/', type=str)
-parser.add_argument('--root', default='/nfs/3x4090/data/workspace/dataset/DADA/', type=str)
 
-# parser.add_argument('--root', default='/nfs/3x4090/data/workspace/dataset/BDDA-ALL/BDDA-salmm/', type=str)
+parser.add_argument('--root', default='/dataset/DADA/', type=str)
 
 parser.add_argument('--w', default='night', type=str,help='select [sunny or rainy or snowy or foggy]')
+
