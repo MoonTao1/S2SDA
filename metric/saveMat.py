@@ -86,7 +86,7 @@ def get_argparser():
     #Augmented features
     parser.add_argument("--train_aug",action='store_true',default=False,
                         help="train on augmented features using CLIP")
-    parser.add_argument("--path_mu_sig", type=str,default='/data9102/workspace/mwt/PODA/pins')
+    parser.add_argument("--path_mu_sig", type=str,default='')
     parser.add_argument("--mix", action='store_true',default=False,
                         help="mix statistics")
 
@@ -165,13 +165,13 @@ if __name__ == '__main__':
 
     print(args.category)
     # ckpts = f'ckpts/{args.category}/{args.test_weight}/'
-    ckpts = '/data9102/workspace/mwt/Experiment/DADA/PODA/abalation/DADA/ori+seg+fusion/snowy/'
+    ckpts = '/'
     model = network.modeling.__dict__[opts.model](num_classes=1, BB=opts.BB,
                                                   replace_stride_with_dilation=[False, False, True])
     model.backbone.attnpool = nn.Identity()
 
     checkpoint = torch.load(
-        '/data9102/workspace/mwt/Experiment/DADA/PODA/abalation/DADA/ori+seg+fusion/snowy/best__deeplabv3plus_resnet_clip_DADA.pth',
+        '',
         map_location="cuda:0")
     model.load_state_dict(checkpoint["model_state"])
 
