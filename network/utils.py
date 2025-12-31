@@ -11,13 +11,13 @@ class _Segmentation(nn.Module):
         self.backbone = backbone
         self.classifier = classifier
 
-        # # 显著性分割模型（冻结参数）
-        # self.segmention = MINet_Res50()
-        # state_dict = torch.load("/nfs/8x3090/data9102/workspace/mwt/PODA/MINet_Res50.pth", map_location="cpu")
-        # self.segmention.load_state_dict(state_dict)
-        # self.segmention.eval()
-        # for param in self.segmention.parameters():
-        #     param.requires_grad = False
+        # 显著性分割模型（冻结参数）
+        self.segmention = MINet_Res50()
+        state_dict = torch.load("/MINet_Res50.pth", map_location="cpu")
+        self.segmention.load_state_dict(state_dict)
+        self.segmention.eval()
+        for param in self.segmention.parameters():
+            param.requires_grad = False
 
     def forward(self, x, mu_t_f1=None, std_t_f1=None, transfer=False, mix=False, activation=None):
         device = x.device
