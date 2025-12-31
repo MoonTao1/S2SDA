@@ -33,15 +33,7 @@ import math
 def get_argparser():
     parser = argparse.ArgumentParser()
 
-    # Dataset Options
-    # parser.add_argument("--data_root", type=str, default='/data9102/workspace/mwt/dataset/rgb_anon_trainvaltest/',
-    #                     help="path to Dataset")
-    # parser.add_argument("--dataset", type=str, default='ACDC',
-    #                     choices=['cityscapes', 'ACDC', 'gta5'], help='Name of dataset')
-    # parser.add_argument("--ACDC_sub", type=str, default="rain",
-    #                     help="specify which subset of ACDC  to use")
-
-    # Deeplab Options
+    
     available_models = sorted(name for name in network.modeling.__dict__ if name.islower() and \
                               not (name.startswith("__") or name.startswith('_')) and callable(
         network.modeling.__dict__[name])
@@ -67,7 +59,7 @@ def get_argparser():
     parser.add_argument("--crop_size", type=int, default=768)
 
     parser.add_argument("--ckpt",
-                        default='/nfs/8x3090/data9102/workspace/mwt/PODA/ckpts/model_best.tar',
+                        default='',
                         type=str,
                         help="restore from checkpoint")
 
@@ -89,7 +81,7 @@ def get_argparser():
                         help="save segmentation results to \"./results\"")
     parser.add_argument("--freeze_BB", action='store_true', default=True,
                         help="Freeze the backbone when training")
-    parser.add_argument("--ckpts_path", type=str, default='/data/workspace/mwt/data/DADA/PODA/fusion3/foggy/',
+    parser.add_argument("--ckpts_path", type=str, default='',
                         help="path for checkpoints saving")
     parser.add_argument("--data_aug", action='store_true', default=False)
     # validation
@@ -97,142 +89,10 @@ def get_argparser():
     # Augmented features
     parser.add_argument("--train_aug", action='store_true', default=True,
                         help="train on augmented features using CLIP")
-    parser.add_argument("--path_mu_sig", type=str, default='/nfs/8x3090/data9102/workspace/mwt/Experiment/DADA/PODA/pins/foggy')
+    parser.add_argument("--path_mu_sig", type=str, default='')
     parser.add_argument("--mix", action='store_true', default=False,
                         help="mix statistics")
     return parser
-
-
-# def get_dataset(dataset, data_root, crop_size, ACDC_sub="rainy", data_aug=True):
-#     """ Dataset And Augmentation
-#
-#     if dataset == 'cityscapes':
-#         if data_aug:
-#             train_transform = et.ExtCompose([
-#                 et.ExtRandomCrop(size=(crop_size, crop_size)),
-#                 et.ExtColorJitter(brightness=0.5, contrast=0.5, saturation=0.5),
-#                 et.ExtRandomHorizontalFlip(),
-#                 et.ExtToTensor(),
-#                 et.ExtNormalize(mean=[0.48145466, 0.4578275, 0.40821073],
-#                                 std=[0.26862954, 0.26130258, 0.27577711]),
-#             ])
-#         else:
-#             train_transform = et.ExtCompose([
-#                 et.ExtRandomCrop(size=(crop_size, crop_size)),
-#                 et.ExtToTensor(),
-#                 et.ExtNormalize(mean=[0.48145466, 0.4578275, 0.40821073],
-#                                 std=[0.26862954, 0.26130258, 0.27577711]),
-#             ])
-#
-#         val_transform = et.ExtCompose([
-#             et.ExtToTensor(),
-#             et.ExtNormalize(mean=[0.48145466, 0.4578275, 0.40821073],
-#                             std=[0.26862954, 0.26130258, 0.27577711]),
-#         ])
-#
-#         train_dst = Cityscapes(root=data_root, dataset=dataset,
-#                                split='train', transform=train_transform)
-#         val_dst = Cityscapes(root=data_root, dataset=dataset,
-#                              split='val', transform=val_transform)
-#
-#     if dataset == 'ACDC':
-#         train_transform = et.ExtCompose([
-#             et.ExtToTensor(),
-#             et.ExtNormalize(mean=[0.48145466, 0.4578275, 0.40821073],
-#                             std=[0.26862954, 0.26130258, 0.27577711]),
-#         ])
-#         val_transform = et.ExtCompose([
-#             et.ExtToTensor(),
-#             et.ExtNormalize(mean=[0.48145466, 0.4578275, 0.40821073],
-#                             std=[0.26862954, 0.26130258, 0.27577711]),
-#         ])
-#
-#         train_dst = Cityscapes(root=data_root, dataset=dataset,
-#                                split='train', transform=train_transform, ACDC_sub=ACDC_sub)
-#         val_dst = Cityscapes(root=data_root, dataset=dataset,
-#                              split='val', transform=val_transform, ACDC_sub=ACDC_sub)
-#
-#     if dataset == "gta5":
-#
-#         if data_aug:
-#             train_transform = et.ExtCompose([
-#                 et.ExtRandomCrop(size=(768, 768)),
-#                 et.ExtColorJitter(brightness=0.5, contrast=0.5, saturation=0.5),
-#                 et.ExtRandomHorizontalFlip(),
-#                 et.ExtToTensor(),
-#                 et.ExtNormalize(mean=[0.48145466, 0.4578275, 0.40821073],
-#                                 std=[0.26862954, 0.26130258, 0.27577711]),
-#             ])
-#         else:
-#             train_transform = et.ExtCompose([
-#                 et.ExtRandomCrop(size=(768, 768)),
-#                 et.ExtToTensor(),
-#                 et.ExtNormalize(mean=[0.48145466, 0.4578275, 0.40821073],
-#                                 std=[0.26862954, 0.26130258, 0.27577711]),
-#             ])
-#
-#         val_transform = et.ExtCompose([
-#             et.ExtCenterCrop(size=(1046, 1914)),
-#             et.ExtToTensor(),
-#             et.ExtNormalize(mean=[0.48145466, 0.4578275, 0.40821073],
-#                             std=[0.26862954, 0.26130258, 0.27577711]),
-#         ])
-#
-#         train_dst = gta5.GTA5DataSet(data_root, 'datasets/gta5_list/gtav_split_train.txt', transform=train_transform)
-#         val_dst = gta5.GTA5DataSet(data_root, 'datasets/gta5_list/gtav_split_val.txt', transform=val_transform)
-#
-#     return train_dst, val_dst
-
-
-# def validate(opts, model, loader, device, metrics):
-#     """Do validation and return specified samples"""
-#     metrics.reset()
-#     if opts.save_val_results:
-#         if not os.path.exists(opts.val_results_dir):
-#             os.mkdir(opts.val_results_dir)
-#         img_id = 0
-#
-#     with torch.no_grad():
-#
-#
-#
-#         for i, ( images, labels,im_id) in tqdm(enumerate(loader), total=len(loader)):
-#             images = images.to(device, dtype=torch.float32)
-#             labels = labels.to(device, dtype=torch.float32)
-#
-#             outputs, features = model(images)
-#             preds = outputs.detach().max(dim=1)[1].cpu().numpy()
-#             targets = labels.cpu().numpy()
-#
-#             metrics.update(targets, preds)
-#
-#             # if opts.save_val_results:
-#             #     for j in range(len(images)):
-#             #         target = targets[j]
-#             #         pred = preds[j]
-#             #
-#             #         target = loader.dataset.decode_target(target).astype(np.uint8)
-#             #         pred = loader.dataset.decode_target(pred).astype(np.uint8)
-#             #
-#             #         Image.fromarray(target).save(opts.val_results_dir + '/%d_target.png' % img_id)
-#             #         Image.fromarray(pred).save(opts.val_results_dir + '/%d_pred.png' % img_id)
-#             #
-#             #         images[j] = denormalize(images[j], mean=[0.48145466, 0.4578275, 0.40821073],
-#             #                                 std=[0.26862954, 0.26130258, 0.27577711])
-#             #         save_image(images[j], opts.val_results_dir + '/%d_image.png' % img_id)
-#             #
-#             #         fig = plt.figure()
-#             #         plt.axis('off')
-#             #         plt.imshow(pred, alpha=0.7)
-#             #         ax = plt.gca()
-#             #         ax.xaxis.set_major_locator(matplotlib.ticker.NullLocator())
-#             #         ax.yaxis.set_major_locator(matplotlib.ticker.NullLocator())
-#             #         # plt.savefig(opts.val_results_dir+'/%d_overlay.png' % img_id, bbox_inches='tight', pad_inches=0)
-#             #         plt.close()
-#             #         img_id += 1
-#
-#         score = metrics.get_results()
-#     return score
 
 
 class AverageMeter(object):
@@ -327,13 +187,13 @@ def main():
     # Setup dataloader
     # _,val_loader,_ = build_dataset(args=args)
     # args.category = 'TrafficGaze'
-    # args.root = '/data/workspace/mwt/traffic_dataset/'
+    # args.root = '/'
     print(args.category)
     print(args.w)
     _, val_loader, _ = build_dataset(args=args)
     args.w = 'sunny'
     # args.category = 'TrafficGaze'
-    # args.root = '/nfs/8x3090/data/workspace/mwt/traffic_dataset'
+    # args.root = ''
 
     train_loader, _,_ = build_dataset(args=args)
     # train_loader = data.DataLoader(
