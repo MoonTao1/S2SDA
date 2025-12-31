@@ -17,7 +17,7 @@
 </div>
 
 
->The architecture of our model. The encoder adopts a dual-branch architecture. Cross-modal fusion is then performed to integrate the two. The unlabeled target data does not go through the decoder.
+>The architecture of our model. Our model operates in two stages. In the first stage, PGSAN leverages the mask as structural prior to jointly optimize the style adjustment parameters. In the second stage, these optimized parameters are used to enhance feature representations, while the mask is fused as guidance for supervised source-domain training.
 
 ## ✨ Contributions
 
@@ -260,6 +260,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
