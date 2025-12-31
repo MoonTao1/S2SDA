@@ -105,7 +105,7 @@ imagenet_templates = [
 ]
 
 # ------------------------------
-# 我们实现一个 PIN 类，带 seg2style adapter
+
 # ------------------------------
 class PIN(nn.Module):
     def __init__(self, content_feat, seg2style_hidden=32):
@@ -161,7 +161,7 @@ def get_argparser():
 
     parser.add_argument("--gpu_id", type=str, default='0',
                         help="GPU ID")
-    parser.add_argument("--save_dir", type=str,default='/data9102/workspace/mwt/Experiment/DADA/PODA/pins/rainy/',
+    parser.add_argument("--save_dir", type=str,default='',
                         help="path for learnt parameters saving")
     parser.add_argument("--crop_size", type=int, default=768)
     parser.add_argument("--batch_size", type=int, default=16,
@@ -208,7 +208,7 @@ def main():
 
     # dataset
     # args.category = 'TrafficGaze'
-    # args.root = '/data/workspace/mwt/traffic_dataset/'
+    # args.root = ''
     args.w = 'sunny'
     train_loader, valid_loader, _ = build_dataset(args=args)
     print("train len:", len(train_loader),args.w)
@@ -225,7 +225,7 @@ def main():
     # load and prepare MINet (saliency model) once
     seg_model = MINet_Res50()
     # load seg checkpoint (确保路径正确)
-    seg_ckpt = "/data9102/workspace/mwt/PODA/MINet_Res50.pth"
+    seg_ckpt = "/MINet_Res50.pth"
     if os.path.isfile(seg_ckpt):
         sd = torch.load(seg_ckpt, map_location='cpu')
         # 如果保存的是 state_dict 直接 load
