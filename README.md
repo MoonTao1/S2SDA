@@ -21,8 +21,8 @@
 
 ## ✨ Contributions
 
-- **[PPIN] Pixel-level Prompt-Induced Normalization**  
-  A pixel-level prompt-induced normalization module that integrates prompt-driven global weather priors with saliency-guided refinement to generate residual style offsets, enabling spatially adaptive feature modulation for zero-shot cross-weather adaptation.
+- **[PGSAN] Prompt-Guided Structure-Aware Normalization**  
+  We propose PGSAN, a prompt-Guided structure-aware normalization module that integrates prompt-driven global weather priors with mask-guided refinement to generate residual style offsets. This design enables spatially adaptive feature modulation for robust cross-weather domain adaptation.
 
 - **[Mask-Guided] Backbone Modulation and Fusion**  
   A mask-guided modulation strategy where saliency masks steer early feature extraction toward weather-sensitive structural regions. The proposed Mask-Guidance Fusion Module further consolidates guided features, improving structural consistency under adverse weather.
@@ -257,6 +257,7 @@ If you find this repository useful, please use the following BibTeX entry for ci
 ```python
 waiting accepted
 ```
+
 
 
 
